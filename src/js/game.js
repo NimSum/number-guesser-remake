@@ -17,22 +17,21 @@ export const startGame = () => {
     playerTwo.guess = getValue('.player-2-guess-input');
     checkPlayerGuesses();
   }
-
+  const randomNum = generateRandomNum();
+  console.log(randomNum)
   function checkPlayerGuesses() {
-    const randomNum = generateRandomNum();
     [ playerOne, playerTwo ].forEach((player, idx) => {
       const { name, guess } = player;
       switch (true) {
-      case player.guess < randomNum:
-        domUpdate.updateLatestScore(idx, name, guess, 'Too Low!')
+      case guess < randomNum:
+        domUpdate.updateLatestScore(idx, name, guess, 'Too Low!');
         break;
-      case player.guess > randomNum:
-        domUpdate.updateLatestScore(idx, name, guess, 'Too High!')
+      case guess > randomNum:
+        domUpdate.updateLatestScore(idx, name, guess, 'Too High!');
         break;
       default: 
-        domUpdate.updateLatestScore(idx, name, guess, 'BOOM!')     
+        domUpdate.updateLatestScore(idx, name, guess, 'BOOM!');
       }
-      player.guess === randomNum
     })
   }
 
