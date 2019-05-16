@@ -1,1 +1,3 @@
-console.log("entry app!!");
+import * as domUpdate from './js/domUpdates'
+
+domUpdate.updateNumberRange();
