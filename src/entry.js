@@ -1,3 +1,3 @@
-import * as domUpdate from './js/domUpdates'
+import { startGame } from './js/game';
 
-domUpdate.updateNumberRange();
+document.addEventListener("DOMContentLoaded", () => startGame())
