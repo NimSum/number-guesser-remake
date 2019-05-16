@@ -1,10 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open-Sans', sans-serif;
+}
+
 main {
   display: flex;
 }
 
-h1, h4{
+h1, h4, h3 {
   text-align: center;
-  margin: auto;
 }
 
 section.players-section,
@@ -19,8 +26,92 @@ section.players-section {
 
 article.range-box form div {
   display: flex;
+  align-items: center;
 }
 
-article.range-box form input {
-  
+article.range-box h3 {
+  text-align: center;
+  margin: 10 20px;
+}
+
+article.range-box form input,
+article.range-box form button {
+  font-size: 2rem;
+  width: 30%;
+  margin: 0 10px;
+}
+
+article.players-box {
+  display: flex;
+  text-align: center;
+}
+
+section.player-1-box,
+section.player-2-box {
+  width: 48%;
+}
+
+div.player-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input.player-1-name-input,
+input.player-2-name-input {
+  font-size: 1.1rem;
+  margin: 10px;
+  text-align: center;
+}
+
+
+input.player-1-guess-input,
+input.player-2-guess-input  {
+  font-size: 1.7rem;
+  min-width: 50px;
+  width: 50%;
+  text-align: center;
+}
+
+section.game-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+section.game-buttons button {
+  font-size: 1.4rem;
+  border-radius: 20px;
+  padding: 5px 20px;
+  margin: 20px;
+}
+
+article.feedback-box div {
+  display: flex;
+}
+
+section.player-feedback {
+  flex: 1;
+  text-align: center;
+}
+
+article.winner-card {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  background-color: gray;
+  text-align: center;
+  padding: 10px;
+}
+
+article.winner-card div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button.delete-card {
+  border-radius: 50%;
+  background-color: red;
+  height: 25px;
+  width: 25px;
 }

@@ -16,20 +16,79 @@
         <form>
           <div>
             <h3>Set Range</h3>
-            <input type="number" />
-            <input type="number" />
+            <input type="number" placeholder="Min" />
+            <input type="number" placeholder="Max" />
+            <button type="submit">
+              Update
+            </button>
           </div>
         </form>
+        <div>
+          <h3>Current Range: 
+            <span class="curr-min-range">1</span> -
+            <span class="curr-max-range">100</span>
+          </h3>
+        </div>
       </article>
       <article class="players-box">
-
+        <section class="player-1-box">
+          <h3 class="player-1-name">Nim</h3>
+          <form>
+            <div class="player-inputs">
+              <input placeholder="Player 1 Name" type="text" class="player-1-name-input"/>
+              <input placeholder="Guess" type="number" class="player-1-guess-input"/>
+            </div>
+          </form>
+        </section>
+        <h3>VS</h3>
+        <section class="player-2-box">
+          <h3 class="player-2-name">Nim</h3>
+          <form>
+            <div class="player-inputs">
+              <input placeholder="Player 2 Name" type="text" class="player-2-name-input"/>
+              <input placeholder="Guess" type="number" class="player-2-guess-input"/>
+            </div>
+          </form>
+        </section>
       </article>
+      <section class="game-buttons">
+          <button class="submit-guesses-btn">Submit</button>
+          <button class="reset-game-btn">Reset</button>
+          <button class="clear-game-btn">Clear</button>
+      </section>
       <article class="feedback-box">
-
+        <h3>Latest Score</h3>
+        <div>
+          <section class="player-feedback">
+            <h4>NIMMM</h4>
+            <p>current guess</p>
+            <h2 class="player-2-guess">0</h2>
+            <p className="feedback-hint-1">low</p>
+          </section>
+          <section class="player-feedback">
+            <h4>SUMMMMM</h4>
+            <p>current guess</p>
+            <h2 class="player-2-guess">0</h2>
+            <p className="feedback-hint-2">HI</p>
+          </section>
+        </div>
       </article>
     </section>
     <section class="winner-card-container">
-      s
+      <article class="winner-card">
+        <h4>
+          <span class="card-p1-name">dd</span>
+          vs
+          <span class="card-p1-name">dd</span>
+        </h4>
+        <h3 class="winner-name">WINNER NAME</h3>
+        <h3>WINNER</h3>
+        <div>
+          <p><span class="guess-count">0</span> Guesses</p>
+          <p><span class="guess-time">0</span> Mins</p>
+          <button class="delete-card">X</button>
+        </div>
+      </article>
     </section>
   </main>
 </body>
