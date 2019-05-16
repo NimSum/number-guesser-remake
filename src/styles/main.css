@@ -1,0 +1,26 @@
+main {
+  display: flex;
+}
+
+h1, h4{
+  text-align: center;
+  margin: auto;
+}
+
+section.players-section,
+section.winner-card-container {
+  flex: 1;
+}
+
+section.players-section {
+  display: flex;
+  flex-direction: column;
+}
+
+article.range-box form div {
+  display: flex;
+}
+
+article.range-box form input {
+  
+}
