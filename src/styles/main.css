@@ -67,9 +67,9 @@ input.player-2-name-input {
 
 input.player-1-guess-input,
 input.player-2-guess-input  {
-  font-size: 1.7rem;
+  font-size: 3rem;
   min-width: 50px;
-  width: 50%;
+  width: 60%;
   text-align: center;
 }
 
